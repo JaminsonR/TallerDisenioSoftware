@@ -12,10 +12,13 @@ import structural.MenuOpciones;
  * @author jamir
  */
 public class Menu implements MenuOpciones{
-
-    @Override
+    
+    public Menu(MenuOpciones i){
+        
+    }
+    
     public void mostrarOpciones() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
     }
     
 }

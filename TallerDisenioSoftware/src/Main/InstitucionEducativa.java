@@ -5,6 +5,7 @@
  */
 package Main;
 
+import java.util.Map;
 import structural.MenuOpciones;
 
 /**
@@ -19,6 +20,15 @@ public class InstitucionEducativa {
     private String zona;
     private int creada;
     private MenuOpciones menu;
+    private Map estudiantes;
+
+    public Map getEstudiantes() {
+        return estudiantes;
+    }
+
+    public void setEstudiantes(Map estudiantes) {
+        this.estudiantes = estudiantes;
+    }
 
     public InstitucionEducativa(String nombre, String canton, String parroquia, String zona, int creada, MenuOpciones menu) {
         this.nombre = nombre;
@@ -27,6 +37,7 @@ public class InstitucionEducativa {
         this.zona = zona;
         this.creada = creada;
         this.menu = menu;
+        this.estudiantes = null;
     }
 
     public String getInfo(){
