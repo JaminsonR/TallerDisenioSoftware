@@ -39,3 +39,4 @@ nbproject/*
 *.swp
 *.DS_Store
 *.lock
+/TallerDisenioSoftware/nbproject/private/
