@@ -13,7 +13,24 @@ public class EscalaAlemania implements IEscalaExtranjera {
 
     @Override
     public String ConvertirCalificacion(Float c) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        String mensajeCalificacion= "";
+        double calificacion= c/2.5;
+        if(calificacion>=1 && calificacion<=4){
+            mensajeCalificacion+="Aprobado\n";
+            if(calificacion>=1.4 && calificacion<=2.0){
+                mensajeCalificacion+="Muy bueno";
+            }
+            else if(calificacion>=1.1 && calificacion<=1.3){
+                mensajeCalificacion+="Sobresaliente";
+            }
+            else if(calificacion<1.1 && calificacion>=1){
+                mensajeCalificacion+="Excelente";
+            }      
+        }
+        else{
+            mensajeCalificacion+="Reprobado";
+        }
+        return mensajeCalificacion;
     }
     
 }

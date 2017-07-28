@@ -1,4 +1,3 @@
-package main;
 
 public class unidadEducativa {
 	
@@ -8,7 +7,7 @@ public class unidadEducativa {
 	private String parroquia;
 	private String zona;
 	private String nombreUem;
-	private int añoCreacion;
+	private int aÃ±oCreacion;
 	
 	//Getters and Setters
 	public String getProvincia() {
@@ -41,31 +40,31 @@ public class unidadEducativa {
 	public void setNombreUem(String nombreUem) {
 		this.nombreUem = nombreUem;
 	}
-	public int getAñoCreacion() {
-		return añoCreacion;
+	public int getAÃ±oCreacion() {
+		return aÃ±oCreacion;
 	}
-	public void setAñoCreacion(int añoCreacion) {
-		this.añoCreacion = añoCreacion;
+	public void setAÃ±oCreacion(int aÃ±oCreacion) {
+		this.aÃ±oCreacion = aÃ±oCreacion;
 	}
 	
 	//Constructor 
 	public unidadEducativa(String provincia, String canton, String parroquia, String zona, String nombreUem,
-			int añoCreacion) {
+			int aÃ±oCreacion) {
 		super();
 		this.provincia = provincia;
 		this.canton = canton;
 		this.parroquia = parroquia;
 		this.zona = zona;
 		this.nombreUem = nombreUem;
-		this.añoCreacion = añoCreacion;
+		this.aÃ±oCreacion = aÃ±oCreacion;
 	}
 	public unidadEducativa() {
 		super();
 	}
 	
 	//Metodos
-	public void setAtributos(String provincia, String canton, String parroquia, String zona, String nombreUem,int añoCreacion) {
-		setAñoCreacion(añoCreacion);
+	public void setAtributos(String provincia, String canton, String parroquia, String zona, String nombreUem,int aÃ±oCreacion) {
+		setAÃ±oCreacion(aÃ±oCreacion);
 		setCanton(canton);
 		setNombreUem(nombreUem);
 		setParroquia(parroquia);
