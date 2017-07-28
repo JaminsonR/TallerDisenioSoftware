@@ -3,29 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package structural;
+package Main;
 
-import behavioral.IEscalaExtranjera;
+import structural.MenuOpciones;
 
 /**
  *
  * @author jamir
  */
-public class MenuCalificaciones extends MenuDecorator {
+public class Menu implements MenuOpciones{
 
-    private IEscalaExtranjera escala;
-
-    public MenuCalificaciones(MenuOpciones i) {
-        super(i);
-    }
-    
-    public String convertir(Float calif, String pais){
-        
-        return "none";
-    }
-    
     @Override
-    public String ejecutarOpciones(int op) {
+    public void mostrarOpciones() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
