@@ -5,7 +5,8 @@
  */
 package structural;
 
-import behavioral.IEscalaExtranjera;
+import behavioral.*;
+
 
 /**
  *
@@ -20,8 +21,13 @@ public class MenuCalificaciones extends MenuDecorator {
     }
     
     public String convertir(Float calif, String pais){
-        
-        return "none";
+        escala = null;
+        if (pais.equals("USA")){
+            escala = new EscalaUSA();
+        }else if(pais.equals("Alemania")){
+            escala = new EscalaAlemania();
+        }
+        return escala.ConvertirCalificacion(calif);
     }
     
     @Override

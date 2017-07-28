@@ -7,7 +7,7 @@ package behavioral;
 
 /**
  *
- * @author jamir
+ * 
  */
 public interface IEscalaExtranjera {
     public String ConvertirCalificacion (Float c);
